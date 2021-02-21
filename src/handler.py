@@ -1,6 +1,6 @@
 import json
 
-from src.service.get_categories import get_categories
+from src.service.service import get_categories
 
 
 def hello(event, context):
@@ -8,8 +8,8 @@ def hello(event, context):
 
     response = {
         "statusCode": 200,
-        "body": json.dumps(body),
-        "event": json.dumps(event)
+        "body": json.dumps(body)
+        # "event": json.dumps(event)
     }
 
     return response
