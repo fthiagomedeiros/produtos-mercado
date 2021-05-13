@@ -1,25 +1,21 @@
 categories = {
-    "laticinios": [
-                {
-                    "id": 1001,
-                    "name": "leite"
-                },
-                {
-                    "id": 1002,
-                    "name": "queijo"
-                }
-            ],
-
-    "padaria": [
-                {
-                    "id": 2001,
-                    "name": "pao"
-                },
-                {
-                    "id": 2002,
-                    "name": "biscoito"
-                }
-            ]
+    "id": 100,
+    "owner_name": "Francisco Medeiros",
+    "owner_email": "fthiagomedeiros@gmail.com",
+    "shared_name": "-",
+    "shared_email": "-",
+    "items_enabled": [
+        {
+            "category": "higiene",
+            "description": "Pasta de Dentes"
+        }
+    ],
+    "items_disabled": [
+        {
+            "category": "carnes",
+            "description": "Fraldinha"
+        }
+    ]
 }
 
 

@@ -22,3 +22,15 @@ def hello(event, context):
         "event": event
     }
     """
+
+
+def post_category(event, context):
+    body = json.loads(event)
+
+    response = {
+        "statusCode": 200,
+        "body": body
+    }
+
+    return response
+

@@ -59,6 +59,14 @@ provider:
 #    - exclude-me-dir/**
 
 functions:
+
+  post_category:
+    handler: src/handler.post_category
+    events:
+      - httpApi:
+          path: /categories
+          method: post
+
   hello:
     handler: src/handler.hello
 #    The following are a few example events you can configure
