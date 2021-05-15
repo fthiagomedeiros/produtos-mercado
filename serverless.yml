@@ -23,7 +23,6 @@ frameworkVersion: '2'
 provider:
   name: aws
   runtime: python3.8
-  lambdaHashingVersion: 20201221
 
 # you can overwrite defaults here
 #  stage: dev
@@ -59,12 +58,11 @@ provider:
 #    - exclude-me-dir/**
 
 functions:
-
-  post_category:
-    handler: src/handler.post_category
+  create_new_list:
+    handler: src/handler.create_list
     events:
       - httpApi:
-          path: /categories
+          path: /shopping-list
           method: post
 
   hello:

@@ -18,6 +18,14 @@ categories = {
     ]
 }
 
+shopping_lists = {}
+
+
+def create_new_list():
+    shopping_lists['id'] = 1
+    shopping_lists['name'] = "Francisco's list"
+    return shopping_lists
+
 
 def get_categories():
     """

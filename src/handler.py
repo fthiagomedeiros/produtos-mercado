@@ -1,6 +1,18 @@
 import json
 
-from src.service.service import get_categories
+from src.service.service import get_categories, create_new_list
+
+
+def create_list(event, context):
+    body = create_new_list()
+
+    response = {
+        "statusCode": 200,
+        "body": json.dumps(body)
+        # "event": json.dumps(event)
+    }
+
+    return response
 
 
 def hello(event, context):
@@ -33,4 +45,3 @@ def post_category(event, context):
     }
 
     return response
-
