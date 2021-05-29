@@ -21,9 +21,9 @@ categories = {
 shopping_lists = {}
 
 
-def create_new_list():
-    shopping_lists['id'] = 1
-    shopping_lists['name'] = "Francisco's list"
+def create_new_list(owner_id, owner_name):
+    shopping_lists['id'] = owner_id
+    shopping_lists['name'] = owner_name
     return shopping_lists
 
 
