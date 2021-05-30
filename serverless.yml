@@ -61,12 +61,12 @@ resources:
         AttributeDefinitions:
           - AttributeName: owner-email
             AttributeType: S
-          - AttributeName: owner-name
+          - AttributeName: list-id
             AttributeType: S
         KeySchema:
           - AttributeName: owner-email
             KeyType: HASH
-          - AttributeName: owner-name
+          - AttributeName: list-id
             KeyType: RANGE
         BillingMode: PAY_PER_REQUEST
         TableName: ${self:provider.environment.SHOPPING_LIST_TABLE}
